@@ -5,9 +5,8 @@ pipeline {
         stage('Update branch') {
             steps {
                 sh """#!/bin/bash
-            			git merge develop --no-edit
-            			git log --oneline -n 5
-						git diff --name-only caliz..develop |& tee logfile_git_diff
+            			
+			git diff --name-only caliz..develop |& tee logfile_git_diff
 
 		            """
                 
