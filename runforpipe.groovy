@@ -29,40 +29,15 @@ pipeline {
      
 									}
 									}
+			stage('Run synthesis') {
+      	        steps {
+      	            echo "this is a test!"
+     
+									}
+									}
 				 }
 	  
-	post {
-	    
-	
-		success {
-		    
-        	
-			mail (	to: "restevez@a2etechnologies.com",
-                subject: "Errors contained in logs files",
-                body: """Errors contained in logs files.
-                
-                details: ${env.BUILD_URL}
-                    
-                """)
-                
-                
-                    
-                
-					
-		}
-		failure {
-		    
-			
-			mail (	to: "restevez@a2etechnologies.com",
-                subject: "Failed build ",
-                body: """Errors contained in logs files.
-                
-                
-                    
-                """)
-		
-        			} 
-		}
+
 	  
       
 	
