@@ -112,13 +112,15 @@ class summarize_errors:
         for extension in converted_list:
             if extension not in shortened_list:
                 shortened_list.append(extension)
-        print(shortened_list)
+        
         if shortened_list == ['.md', '.html'] or shortened_list == ['.html','md']:
-           print('no hacer nada')
+           return False
         if len(shortened_list) == 1 and shortened_list == ['.md']:
-           print('vamos Bien')
+           return False
         if len(shortened_list) == 1 and shortened_list == ['.html']:
-           print('vamos Bien')
+           return False
+        if else
+	   return True
             
 if __name__ == "__main__":
       main() 
