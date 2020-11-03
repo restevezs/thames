@@ -5,7 +5,7 @@ pipeline {
         stage('Update branch') {
             steps {
                 sh """#!/bin/bash
-            			
+            		git branch	
 			git diff --name-only caliz..develop |& tee logfile_git_diff
 
 		            """
