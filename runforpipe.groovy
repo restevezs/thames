@@ -29,7 +29,7 @@ pipeline {
      
 									}
 									}
-			stage('Run synthesis') {
+			stage('Run') {
       	        steps {
       	            echo "this is a test!"
      
